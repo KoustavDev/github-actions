@@ -17,6 +17,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /root/nodejs-application-deploy-github-actions
+            cd /home/ubuntu/github-actions
             git pull
             docker compose up -d --build
